@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <style>
+    html, body{
+        margin: 0;
+        padding: 0;
+    }
+    #strona{
+        width: 1200px;
+        margin: 0 auto;
+    }
+    #gorne_menu{
+        float: left;
+        height: 50px;
+        width: 100%;
+    }
+    #lewe_menu{
+        width: 300px;
+        float: left;
+    }
+    #tresc{
+        float: left;
+        margin: 20px;
+    }
+    #gorna_lista{
+        list-style-type: none;
+        padding-left: 0;
+    }
+    #gorna_lista li{
+        float: left;
+        margin-right: 5px;
+        
+    }
+    #gorna_lista a{
+        background-color: blueviolet;
+        padding: 3px 4px;
+    }
+    #gorna_lista a:link{
+        text-decoration: none;
+        color: #fff;
+    }
+    #gorna_lista a:hover{
+        text-decoration: none;
+        background-color: darkred;
+        font-weight: bold;
+    }
+    .lewa_lista{
+        width: 250px;
+        border: 1px solid darkred;
+        background-color: rgb(226, 43, 98);
+        color: black;
+        height: 40px;
+        overflow: hidden;
+    }
+    .lewa_lista li{
+        list-style-type: none;    
+    }
+    .linki{
+        padding: 0;
+        margin-left: 5px;
+    }
+    .lewa_lista a:link{
+        text-decoration: none;
+        color: white;
+    }
+    .lewa_lista a:hover{
+        text-decoration: none;
+        background-color: darkred;
+        font-weight: bold;
+    }
+    .lewa_lista:hover {
+        height: auto;
+    }
+    </style>
+</head>
+<body>
+    <div id="strona">
+        <div id="gorne_menu">
+            <ul id="gorna_lista">
+                <li><a href="#">Strona Główna</a></li>
+                <li><a href="#">Podstrona 1</a></li>
+                <li><a href="#">Podstrona 2</a></li>
+                <li><a href="#">Podstrona 3</a></li>
+                <li><a href="#">Podstrona 4</a></li>
+            </ul>
+        </div>
+        <div id="lewe_menu">
+            <div class="lewa_lista">
+                <p >Menu 1</p>
+                <ul class="linki">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                </ul>
+            </div>
+            <div class="lewa_lista">
+                <p>Menu 2</p>
+                <ul class="linki">
+                    <li><a href="#">Link 3</a></li>
+                    <li><a href="#">Link 4</a></li>
+                    <li><a href="#">Link 5</a></li>
+                </ul>
+            </div>
+        </div>
+        <div id="tresc">Zawartość strony</div>
+    </div>
+</body>
+</html>

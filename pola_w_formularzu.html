@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formularz z polami</title>
+</head>
+<body>
+    
+    <form action="mailto: asiaska7@gmail.com">
+    <fieldset>
+        <legend>Dane osobowe</legend>
+        <label for="imie">Imię:</label>
+        <input type="text" name="imie" id="imie"><br><br>
+        <label for="nazwisko">Nazwisko:</label>
+        <input type="text" name="nazwisko" id="nazwisko"><br><br>
+        <label for="M">Mężczyzna:</label> 
+        <input type="radio" name="plec" value="M" id="M">
+        <label for="K">Kobieta:</label> <input type="radio" name="plec" value="K" id="K"><br><br>
+    </fieldset>
+    <fieldset> 
+        <legend>Twoje pytanie</legend> 
+        Adresat: <select name="adresat">
+                <optgroup label="HR">
+                    <option>Jan Kowalski</option>
+                    <option>brat Jana Kowalskiego</option>
+                </optgroup>
+                <optgroup label="Serwis">
+                    <option>Jan Nowak</option>
+                </optgroup>
+                <optgroup label="IT">
+                    <option>Jan Nowalski</option>
+                </optgroup>
+            </select><br><br>
+        <textarea name="tresc" cols="30" rows="5"></textarea> <br><br>
+        <input type="reset" value="Wyczyść formularz">
+        <input type="submit" value="Wyślij"> 
+    </fieldset> 
+    </form>
+</body>
+</html>
